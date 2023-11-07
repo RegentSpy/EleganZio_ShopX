@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 80px;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll img {
+    filter: invert(15%);
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.carrito {
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedor > div {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.contenedor > div:hover {
+    background-color: #f4f4f4;
+}
+
+.informacion {
+    text-align: center;
+    padding: 10px;
+}
+
+.informacion p:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.informacion .precio span {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.informacion button {
+    background-color: #263143;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.informacion button:hover {
+    background-color: #2D4263;
+}
+
+.informacion button:active {
+    background-color: #263143;
+}
+
+.diseñoNumero {
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
+    top: -12px;
+    left: 10px;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

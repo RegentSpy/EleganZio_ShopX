@@ -1,0 +1,30 @@
+
+/* Estilos para el botón */
+.sound-button {
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Texto en color blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Borde sin estilo */
+    border-radius: 20px; /* Esquinas redondeadas */
+    font-size: 38px; /* Tamaño del texto */
+    font-family: lato;
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    margin-left: 10px; /*Ubicación del botón
+     
+    /* Imagen de icono de sonido */
+    background-image: url('sonido.png'); /* Ruta a la imagen */
+    background-size: 40px 40px; /* Tamaño de la imagen */
+    background-position: center left; /* Posición de la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    padding-left: 45px; /* Espaciado para separar la imagen del texto */
+
+    /* Añadir sombra */
+    box-shadow: 4px 3px 5px 4px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .botoncito{
+    margin-top: 10px;
+    vertical-align: baseline;
+  }

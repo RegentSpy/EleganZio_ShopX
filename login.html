@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Inicio de sesión </title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style_login.css">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                        
+    </head>
+    <p>
+    <body>
+        <div id="header">
+            <ul class="nav">
+        <header>
+            <div class="logo">
+                <img src ="imagenes_sitio/dark.png" class="logo_new">
+              
+            </div>
+            <nav id="menu">
+                <ul  class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Acerca_De.html">Acerca de</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Tienda.html">Tienda</a></li>
+                    <li><a href="Devoluciones.html">Devoluciones</a></li>
+                    <li><a href="login.html">Ingresa</a></li></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form action="login.php" name="" method="POST">
+          
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    
+                    <header>Iniciar sesión</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input" name="email">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Contraseña" class="password"  name="contraseña">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+
+                        <div class="field button-field">
+                            <button  href="index.html">Iniciar</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>¿No tienes una cuenta? <a href="#" class="link signup-link">Registrarse</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="https://m.facebook.com/login/?locale=es_LA&refsrc=deprecated" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>inciar con Facebook</span>
+                    </a>
+                </div>
+
+             
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header> Registrarse</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Crea Contraseña" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirma Contraseña" class="password">
+                           
+                        </div>
+
+                        <div class="field button-field">
+                            <button> Registrarse</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>¿Ya tienes una cuenta? <a href="#" class="link login-link">Iniciar sesión</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>inciar con Facebook</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+          </form>
+    
+        <!-- JavaScript -->
+        <script src="ScriptLogin.js"></script>
+        <div class="bottom-bar">
+            <p>&copy; 2023 Eleganzio S. de R.L. de C.V. Todos los derechos reservados</p>
+        </div>
+
+    </body>
+</html>

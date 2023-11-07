@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_devluciones.css">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="boton.css">
+    <script src = "https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Devoluciones</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src ="imagenes_sitio/dark.png" class="logo_new">
+          
+        </div>
+		<nav id="menu">
+            <ul  class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Acerca_De.html">Acerca de</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Tienda.html">Tienda</a>
+               <!-- start menu desplegable -->
+			   <ul>
+				<li><a href="Trajes.html">Trajes</a></li>
+				<li><a href="Camisas.html">Camisas</a></li>
+				<li><a href="Pantalones.html">Pantalones</a></li>
+				<li><a href="Accesorios.html">Accesorios</a></li>
+
+				</ul>
+		<!-- end menu desplegable -->
+		 </li>
+
+                <li><a href="Devoluciones.html">Devoluciones</a></li>
+                <li><a href="login.html">Ingresa</a></li>
+            </ul>
+        </nav>
+    </header>
+	 <!-- Botón para reproducir el audio -->
+	 <button class="sound-button" id="playButton">Reproducir</button>
+    
+	 <!-- Elemento de audio -->
+	 <audio id="audioElement" src="DEVOLUCIONES.mp3" preload="auto"></audio>
+ 
+	 <script>
+		 // Obtener el elemento de audio y el botón
+		 var audio = document.getElementById("audioElement");
+		 var playButton = document.getElementById("playButton");
+ 
+		 // Agregar evento de clic al botón para reproducir o pausar el audio
+		 playButton.addEventListener("click", function() {
+			 if (audio.paused) {
+				 audio.play();
+				 playButton.textContent = "Pausar Audio";
+			 } else {
+				 audio.pause();
+				 playButton.textContent = "Reproducir Audio";
+			 }
+		 });
+	 </script>
+     <div class ="container-form">
+         <div class = "info-form">
+			<p>		
+	        <h2> DATOS DEVOLUCIONES</h2>
+			<p><h3>-Asegurate de llenar los datos correctamente</h3></p>
+			<p><h3>-Recuerda que tienes 15 dias hábiles partir de que recibes el producto y para llenar el formulario en caso de controversias, pasando los dias dichos no se tomará en cuenta LA DEVOLUCIÓN</h3> </p>
+			    
+			 <img src="imagenes_sitio/logo_new.png" width="400"
+			 height="341" BORDER ="6"/>
+		 </div>
+		 <form action="devoluciones.php" name="" method="POST">
+			<form action="#" autocomplete="off">
+			
+					<!-- <label><h3>Motivo:</h3>
+						<br />
+						<select name="motivo" >
+							<option>--Ninguno--</option>
+							<option>Malas costuras.</option>
+							<option>Defectuoso</option>
+							<option>Talla incorrecta</option>
+							<option>Mal olor/Sucio</option>
+							<option>Otro</option>
+						</select>
+					</label> -->
+				</p>
+						<label><input name="motivo"  placeholder="Motivo"  class="campos" type="text" required/></label>
+						<label><input name="num_pedido"  placeholder="No.Pedido"  class="campos" type="text" required/></label>
+						<label><input name="nombre"  placeholder="Ingresa tu nombre"  class="campos" type="text" required/></label>
+						<label><input name="apellido"  placeholder="Ingresa tu apellido" class="campos" type="text" required/></label>
+						<label><input type="phone" name="telefono" placeholder="Ingresa tu telefono" class="campos" required type="text"/></label>
+						<label><input type="email" name="email" placeholder="Ingresa tu correo electrónico" class="campos" required type="text"/></label>
+						<label><input type="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha de nacimiento (año/mes/día)" class="campos" required type="text"/></label>
+						<label><input name="cp"  placeholder="Ingresa tu código postal"  class="campos" type="text" required/></label>
+						<label><input name="colonia"  placeholder="Ingresa tu colonia"  class="campos" type="text" required/></label>
+						<label><input name="calle"  placeholder="Ingresa tu calle"  class="campos" type="text" required/></label>
+						<label><input name="numero"  placeholder="Ingresa el número exterior"  class="campos" type="text" required/></label>
+						<!-- <h3>Con el fin de agilizar el proceso de su incidencia, le agradeceríamos nos adjuntara una o más fotografías, siendo éstas imprescindibles en el caso de rotura o daño.</h3>
+						<label for="photo"> </label>
+						<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+						<label for="file-upload" class="custom-file-upload" required>
+							<i class="fa fa-cloud-upload"></i> Subir Evidencias
+						</label>
+						<input id="file-upload" type="file"/> -->
+						<input type="submit" name="enviar" value="Enviar Formulario" class ="btn-enviar"> 
+			</form>
+				
+		</form>
+		<div class="bottom-bar">
+			<p>&copy; 2023 Eleganzio S. de R.L. de C.V. Todos los derechos reservados</p>
+		</div>
+</body>
+</html>

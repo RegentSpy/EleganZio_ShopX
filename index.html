@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="PRUEBA.CSS">
+    <link rel="stylesheet" href="boton.css">
+    <script src = "https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <title>Pagina principal</title>
+</head>
+<body>
+    <div id="header">
+        <ul class="nav">
+    <header>
+        <div class="logo">
+            <img src ="imagenes_sitio/dark.png" class="logo_new">
+          
+        </div>
+        <nav id="menu">
+            <ul  class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Acerca_De.html">Acerca de</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Tienda.html">Tienda</a>
+                <!-- start menu desplegable -->
+                        <ul>
+                       
+                        <li><a href="Trajes.html" >Trajes</a></li>
+                        <li><a href="Camisas.html">Camisas</a></li>
+                        <li><a href="Pantalones.html">Pantalones</a></li>
+                        <li><a href="Accesorios.html">Accesorios</a></li>
+
+                        </ul>
+                <!-- end menu desplegable -->
+                 </li>
+
+                <li><a href="Devoluciones.html">Devoluciones</a></li>
+                <li><a href="login.html">Ingresa</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+         <!-- Botón para reproducir el audio -->
+    <button class="sound-button" id="playButton">Reproducir</button>
+    
+    <!-- Elemento de audio -->
+    <audio id="audioElement" src="Eleganzio.mp3" preload="auto"></audio>
+
+    <script>
+        // Obtener el elemento de audio y el botón
+        var audio = document.getElementById("audioElement");
+        var playButton = document.getElementById("playButton");
+
+        // Agregar evento de clic al botón para reproducir o pausar el audio
+        playButton.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = "Pausar Audio";
+            } else {
+                audio.pause();
+                playButton.textContent = "Reproducir Audio";
+            }
+        });
+    </script>
+        <h2 class="titulo"> Nosotros </h2>
+        <p>
+            Somos una marca de ropa para hombres, nos distinguimos
+            por nuestro buen gusto y encanto clásico mediterráneo, con un estilo accesible y actual. 
+            Estamos enfocados en ser un colaborador indispensable en el buen vestir del caballero contemporáneo, incorporando
+            vanguardia de moda en todos los materiales y detalles, sin perder de vista la 
+            elegancia clásica que nos caracteriza.
+        </p>
+
+        <div class="botonSaberMas">
+            <a href="Acerca_De.html" class="boton">Saber más</a>
+
+        </div>
+        <div class="fotos">
+            <ul>
+                
+                <li><img src="imagenes/A.jpg" alt=""></li>
+                <li><img src="imagenes/B.jpg" alt=""></li>
+                <li><img src="imagenes/C.jpg" alt=""></li>
+                <li><img src="imagenes/D.jpg" alt=""></li>
+                <li><img src="imagenes/E.jpg" alt=""></li>
+                <li><img src="imagenes/F.jpg" alt=""></li>
+                
+    
+            </ul>
+        </div>
+
+        <section class="Compracateg">
+            <h2 class="titulo">Compra por categorias</h2>
+            <div class="categorias">
+                <ul>
+                    <a class="img1" href="Trajes.html"><img src="imgCate/TRAJE.png"></a>
+                    <a  class="img2" href="Camisas.html"><img src="imgCate/CAMISA.png"></a>
+                    <a class="img3" href="Pantalones.html"><img src="imgCate/PANTALONES.png"></a>
+                    <a class="img4" href="Accesorios.html"><img src="imgCate/ACCESORIOS.png"></a>
+            
+                </ul>
+            </div>
+        </section>
+
+        <h2 class="titulo"> Ubicación </h2>
+        <p>
+            Actualmente contamos con más de 54 sucursales, con presencia en 15 estados de la República Mexicana, 
+            convirtiéndonos en una de las marcas más importantes de su mercado.
+
+            Da click en el mapa ¡Visítanos!
+        </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.377649243301!2d-99.1359014905746!3d19.439277981765812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9321e33c06f%3A0x47770c7b8f540206!2sRep%C3%BAblica%20de%20Brasil%2C%20Centro%2C%2006020%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1699231879356!5m2!1ses!2smx" 
+        width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contáctanos</h3>
+                <p>Email: Eleganzio@gmail.com</p>
+                <p>Teléfono: 477 114 2321</p>
+                <p>Dirección: Calle Brasil, Colonia Centro, Delegación Cuauhtémoc, CDMX.</p>
+            </div>
+            <div class="footer-content">
+                <h3>Enlaces directos</h3>
+                <ul class="lista">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Acerca_De.html">Acerca de</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Tienda.html">Tienda</a></li>
+                    <li><a href="Devoluciones.html">Devoluciones</a></li>
+                    <li><a href="login.html">Ingresa</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Síguenos</h3>
+                <ul class="social-icons">
+                <li><a href="https://m.facebook.com/login/?locale=es_LA&refsrc=deprecated"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/accounts/login/?hl=es"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/signup"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 Eleganzio S. de R.L. de C.V. Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

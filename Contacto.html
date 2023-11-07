@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_contacto.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="boton.css">
+    <script src = "https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div id="header">
+      <ul class="nav">
+  <header>
+      <div class="logo">
+          <img src ="imagenes_sitio/dark.png" class="logo_new">
+        
+      </div>
+      <nav id="menu">
+          <ul  class="nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="Acerca_De.html">Acerca de</a></li>
+              <li><a href="Contacto.html">Contacto</a></li>
+              <li><a href="Tienda.html">Tienda</a>
+              <!-- start menu desplegable -->
+              <ul>
+                <li><a href="Trajes.html">Trajes</a></li>
+                <li><a href="Camisas.html">Camisas</a></li>
+                <li><a href="Pantalones.html">Pantalones</a></li>
+                <li><a href="Accesorios.html">Accesorios</a></li>
+
+                </ul>
+        <!-- end menu desplegable -->
+         </li>
+
+              <li><a href="Devoluciones.html">Devoluciones</a></li>
+              <li><a href="login.html">Ingresa</a></li>
+          </ul>
+      </nav>
+  </header>   
+        <!-- Botón para reproducir el audio -->
+        <button class="sound-button" id="playButton">Reproducir</button>
+    
+        <!-- Elemento de audio -->
+        <audio id="audioElement" src="CONTACTO.mp3" preload="auto"></audio>
+    
+        <script>
+            // Obtener el elemento de audio y el botón
+            var audio = document.getElementById("audioElement");
+            var playButton = document.getElementById("playButton");
+    
+            // Agregar evento de clic al botón para reproducir o pausar el audio
+            playButton.addEventListener("click", function() {
+                if (audio.paused) {
+                    audio.play();
+                    playButton.textContent = "Pausar Audio";
+                } else {
+                    audio.pause();
+                    playButton.textContent = "Reproducir Audio";
+                }
+            });
+        </script>
+
+    <div class ="container-form">
+      <div class = "info-form">
+        <h2> Contáctanos</h2>
+        <p>Escríbenos y en breve nos pondremos en contacto</p>
+        <a hred = "#"> <i class = "fa fa-phone"></i> 477 114 2321</a>
+        <a hred = "#"> <i class = "fa fa-envelope"></i>Eleganzio@gmail.com</a>
+        <a hred = "#"> <i class = "fa fa-map-marked"></i>Ciudad de León, Gto., México </a>
+
+      </div>
+      <form action="Contacto.php" name="" method="POST">
+        <form action="#" autocomplete="off">
+          <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campos">
+          <input type="text" name="email" placeholder="Ingresa tu correo Electronico" class="campos">
+          <textarea name="mensaje" placeholder="Ingresa tu mensaje">
+          </textarea>
+          <input type="submit" name="enviar" value="Enviar Mensaje" class ="btn-enviar">
+        </form>
+      </form>
+      
+    </div>
+    <div class="bottom-bar">
+      <p>&copy; 2023 Eleganzio S. de R.L. de C.V. Todos los derechos reservados</p>
+  </div>
+  </body>
+  </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="StyleTrajes.css">
+    <link rel="stylesheet" href="Style_categorias.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Trajes</title>
+</head>
+<body>
+  <div id="header">
+    <ul class="nav">
+<header>
+    <div class="logo">
+        <img src ="imagenes_sitio/dark.png" class="logo_new">
+      
+    </div>
+    <nav id="menu">
+        <ul  class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Acerca_De.html">Acerca de</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="Tienda.html">Tienda</a>
+            <!-- start menu desplegable -->
+                    <ul>
+                   
+                    <li><a href="Trajes.html" >Trajes</a></li>
+                    <li><a href="Camisas.html">Camisas</a></li>
+                    <li><a href="Pantalones.html">Pantalones</a></li>
+                    <li><a href="Accesorios.html">Accesorios</a></li>
+
+                    </ul>
+            <!-- end menu desplegable -->
+             </li>
+
+            <li><a href="Devoluciones.html">Devoluciones</a></li>
+            <li><a href="login.html">Ingresa</a></li>
+            
+        </ul>
+    </nav>
+    <div class="shopping">
+        <i class="fas fa-shopping-bag"></i>
+      <span class="quantity">0</span>
+  </div>
+</header>
+    <div class="container">
+           
+        </header>
+
+        <div class="list"></div>
+    </div>
+
+    <div class="card">
+        <h1>Carrito</h1>
+        <ul class="listCard">
+
+        </ul>
+        <div class="checkOut">
+            
+            <div class="total">0</div>
+            <div class="closeShopping">Cerrar</div>
+            
+            <form action="carritoBd.php" method="post">
+                
+
+                <button class="pay-button" id="payButton" disabled> Pagar</button>
+                <a href="form_cliente.html" id="abrirFormulario" target="_blank">Llenar formulario para direccionar tu compra</a>
+                <input type="hidden" name="productos" id="productosInput" value="">
+            </form>
+
+        </div>
+    </div>
+    <script>
+        const abrirFormulario = document.getElementById("abrirFormulario");
+    
+        // Agrega un evento de clic para abrir la ventana emergente
+        abrirFormulario.addEventListener("click", function(e) {
+            e.preventDefault(); // Evita que el enlace cargue la página
+            const ventanaCliente = window.open(this.href, "clienteFormulario", "width=600,height=400");
+            ventanaCliente.focus();
+        });
+    </script>
+    
+    <script src="Pantalones.js"></script>
+    <div class="bottom-bar">
+        <p>&copy; 2023 Eleganzio S. de R.L. de C.V. Todos los derechos reservados</p>
+    </div>
+</body>
+</html>

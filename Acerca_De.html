@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_AcercaDE.css">
+    <link rel="stylesheet" href="boton.css">
+    <title>Acerca De</title>
+</head>
+<body>
+    <div id="header">
+        <ul class="nav">
+    <header>
+        <div class="logo">
+            <img src ="imagenes_sitio/dark.png" class="logo_new">
+          
+        </div>
+        <nav id="menu">
+            <ul  class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Acerca_De.html">Acerca de</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Tienda.html">Tienda</a>
+                <!-- start menu desplegable -->
+                <ul>
+                    <li><a href="Trajes.html">Trajes</a></li>
+                    <li><a href="Camisas.html">Camisas</a></li>
+                    <li><a href="Pantalones.html">Pantalones</a></li>
+                    <li><a href="Accesorios.html">Accesorios</a></li>
+
+                    </ul>
+            <!-- end menu desplegable -->
+                 </li>
+
+                <li><a href="Devoluciones.html">Devoluciones</a></li>
+                <li><a href="login.html">Ingresa</a></li>
+            </ul>
+      </nav>
+  </header>   
+  <main>
+
+        <!-- Botón para reproducir el audio -->
+        <button class="sound-button" id="playButton">Reproducir</button>
+    
+        <!-- Elemento de audio -->
+        <audio id="audioElement" src="AcercaDe.mp3" preload="auto"></audio>
+    
+        <script>
+            // Obtener el elemento de audio y el botón
+            var audio = document.getElementById("audioElement");
+            var playButton = document.getElementById("playButton");
+    
+            // Agregar evento de clic al botón para reproducir o pausar el audio
+            playButton.addEventListener("click", function() {
+                if (audio.paused) {
+                    audio.play();
+                    playButton.textContent = "Pausar Audio";
+                } else {
+                    audio.pause();
+                    playButton.textContent = "Reproducir Audio";
+                }
+            });
+        </script>
+    <h1>HISTORIA</h1>
+    <img src="imagenes_sitio/Historia.jpg" style="float: left">
+        <P>La historia de Eleganzio es una historia de pasión por la moda 
+            y la excelencia en la confección. Comenzó en 1932 en el centro
+            de la Ciudad de México, en la calle de Brasil, con una tienda 
+            especializada en trajes para caballero. Durante varias décadas, 
+            la tienda se destacó en el arte sartorial gracias a la honestidad, 
+            trabajo y cuidado en los detalles de cada prenda. </P>
+           
+            <p>
+                En 1973, fundamos una sociedad y una fábrica de trajes para caballero, 
+                incursionando en la producción a gran escala. A pesar de este cambio, 
+                nunca perdimos la calidad y los detalles que caracterizaban a los trajes 
+                hechos a medida. Hoy en día, continuamos siendo líderes en el ramo a nivel
+                 nacional y exportamos productos de primera calidad a Estados Unidos. 
+            </p>
+            <p>
+                Gracias a esta experiencia familiar, en el año 2000 lanzamos al mercado 
+                la marca Eleganzio, abriendo una cadena de 18 tiendas. Hoy contamos con
+                 más de 54 sucursales, con presencia en 15 estados de la República Mexicana, 
+                 convirtiendonos en una de las marcas más importantes de nuestro mercado. 
+                 El diseño de nuestras tiendas está inspirado en los años 20’s y 30’s, 
+                 pero con un giro contemporáneo. Utilizan maderas oscuras que remontan a
+                  un estilo europeo mediterráneo y elementos decorativos que demuestran su
+                   experiencia familiar fabricando ropa de vestir formal. 
+            </p>
+
+         <div>
+         <h1>GIRO</h1>
+        <img src="imagenes_sitio/logo_eleganzio.jpeg" style="float: left" >
+        <P>La historia de Eleganzio es una historia de pasión por la moda 
+            y la excelencia en la confección. Comenzó en 1932 en el centro
+            de la Ciudad de México, en la calle de Brasil, con una tienda 
+            especializada en trajes para caballero. Durante varias décadas, 
+            la tienda se destacó en el arte sartorial gracias a la honestidad, 
+            trabajo y cuidado en los detalles de cada prenda. </P>
+        </div>
+
+        <h1>MISIÓN, VISIÓN Y VALORES</h1>    
+        <img src="imagenes_sitio/MISION.jpg" alt="">
+        <img src="imagenes_sitio/VISION.jpg" alt="">
+        <img src="imagenes_sitio/VALORES.jpg" alt="">
+        
+    </main>  
+    <div class="bottom-bar">
+        <p>&copy; 2023 Eleganzio S. de R.L. de C.V. Todos los derechos reservados</p>
+    </div>
+ </body>
+</html>

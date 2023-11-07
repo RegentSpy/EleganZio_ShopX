@@ -1,0 +1,45 @@
+*{
+    font-family: lato;
+}
+
+h1{
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+main{
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+img{
+    margin-right: 15px;
+    width: 450px;
+    height: 300px;
+}
+
+div img{
+    margin-left: 200px;
+    margin-right: 30px;
+    width: 360px;
+    height: 220px;
+}
+
+main div p{
+    margin-left: 400px;
+    padding: 50px;
+}
+.bottom-bar{
+    background: rgb(6, 6, 47);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
